@@ -14,8 +14,18 @@
 
 
 .hero-section {
-  height: 400px;
-  background-color: var(--beige);
+  height: 80vh;
+  min-height: 600px;
+  background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdXB3azYxODAyMTgzLXdpa2ltZWRpYS1pbWFnZS1rb3dibnVqMy5qcGc.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-content {
+  position: relative;
+  height: 100%;
+  background: rgba(46, 43, 38, 0.4);
 }
 
 .hero-text {
@@ -26,10 +36,12 @@
   height: 100%;
   font-size: 1.4em;
   letter-spacing: 9px;
+  color: white;
 }
 
-h1 {
-  margin: 0 0 3rem 0;
+.hero-text p {
+  max-width: 500px;
+  margin-top: 1rem;
 }
 
 /* Navigation Bar */
