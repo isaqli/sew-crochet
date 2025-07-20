@@ -9,39 +9,50 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Varta', sans-serif;
 }
 
 
 .hero-section {
   height: 80vh;
   min-height: 600px;
-  background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdXB3azYxODAyMTgzLXdpa2ltZWRpYS1pbWFnZS1rb3dibnVqMy5qcGc.jpg');
-  background-size: cover;
-  background-position: center;
-  position: relative;
+  background-color: var(--beige);
+  padding-top: 70px;
 }
 
 .hero-content {
-  position: relative;
-  height: 100%;
-  background: rgba(46, 43, 38, 0.4);
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 40px;
 }
 
 .hero-text {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100%;
-  font-size: 1.4em;
-  letter-spacing: 9px;
-  color: white;
+  align-items: flex-start;
+  color: var(--primary);
+}
+
+.hero-text h1{
+  margin: 0;
+  font-size: 4em;
+  line-height: 1.2;
+  font-family: Chalkduster, fantasy;
 }
 
 .hero-text p {
-  max-width: 500px;
+  max-width: 600px;
+  line-height: 1.4;
+  font-size: 1.2em;
   margin-top: 1rem;
+  padding-right: 40px;
+}
+
+.hero-image {
+  width: 50%;
 }
 
 /* Navigation Bar */
@@ -49,6 +60,7 @@
   background-color: var(--primary);
   padding: 2.5rem 0; 
   box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  font-family: 'Varta', sans-serif;
 }
 
 .navbar ul {
