@@ -1,4 +1,5 @@
 :root {
+  --dark: #364e3a;
   --primary: #44624a;
   --secondary: #748c71;
   --third: #9dbc9a;
@@ -9,9 +10,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Varta', sans-serif;
 }
 
+body {
+  font-family: 'Varta', sans-serif;
+}
 
 .hero-section {
   min-height: 300px;
@@ -98,11 +101,13 @@
 /*Video Gallery*/
 .container {
   background-color: var(--third);
+  padding: 3rem 3rem;
+  width: 100%;
 }
 
 .video-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   margin-top: 2rem;
 }
 
@@ -110,4 +115,57 @@
   background: white;
   border-radius: 8px;
   overflow: hidden;
+}
+
+.video-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.video-image {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.video-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-info {
+  padding: 1.5rem;
+}
+
+.video-title {
+  font-family: Chalkduster, fantasy;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.video-creator {
+  color: var(--secondary);
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.video-description {
+  margin-bottom: 1rem;
+}
+
+.video-link {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  background-color: var(--primary);
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.video-link:hover {
+  background-color: var(--dark);
 }
