@@ -1,7 +1,7 @@
 :root {
   --primary: #44624a;
   --secondary: #748c71;
-  --third: #8ba888;
+  --third: #9dbc9a;
   --beige: #e4ddd2;
 }
 
@@ -17,6 +17,7 @@
   min-height: 300px;
   background-color: var(--beige);
   align-items: center;
+  box-shadow: 0 1px 3px #908c85;
 }
 
 .hero-content {
@@ -58,7 +59,7 @@
 }
 
 .hero-image img {
-  max-width: 300px;
+  max-width: 350px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
@@ -81,20 +82,32 @@
 }
 
 .nav-link {
-  background-color: var(--secondary);
   padding: 0.8rem 1.2rem;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.96rem;
   font-weight: 600;
   border-radius: 8px;
   color: white;
 }
 
-.nav-link:hover {
+.navbar a:hover, .navbar a.active {
+  background: var(--secondary);
+  color: white;
+}
+
+/*Video Gallery*/
+.container {
   background-color: var(--third);
 }
 
-.nav-link.active {
-  background-color: var(--secondary);
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  margin-top: 2rem;
 }
 
+.video-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
