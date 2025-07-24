@@ -14,6 +14,7 @@
 
 body {
   font-family: 'Varta', sans-serif;
+  overflow-x: hidden;
 }
 
 .hero-section {
@@ -96,7 +97,8 @@ body {
   color: white;
 }
 
-.navbar a:hover, .navbar a.active {
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
   background: var(--secondary);
   color: white;
 }
@@ -106,16 +108,18 @@ body {
   display: none;
   animation: fadeIn 0.5s ease;
 }
+
 .tab-content.active {
   display: block;
 }
-
 
 /*Video Gallery*/
 .container {
   background-color: var(--third);
   padding: 3rem 3rem;
+  margin: 0 auto;
   width: 100%;
+  min-height: 100vh;
 }
 
 .video-gallery {
