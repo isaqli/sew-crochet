@@ -4,6 +4,7 @@
   --secondary: #748c71;
   --third: #9dbc9a;
   --beige: #e4ddd2;
+  --pink: #ff79d2;
 }
 
 * {
@@ -163,12 +164,17 @@ body {
   font-size: 1.3rem;
 }
 
-.video-creator {
+.video-creator a {
   color: var(--secondary);
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 1rem;
   display: block;
+  text-decoration: none;
+}
+
+.video-creator a:hover {
+  color: var(--pink);
 }
 
 .video-description {
@@ -188,3 +194,5 @@ body {
 .video-link:hover {
   background-color: var(--dark);
 }
+
+/*About Me*/
