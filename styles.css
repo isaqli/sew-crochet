@@ -243,20 +243,35 @@ footer {
   padding: 2rem 0;
 }
 
-/*Responsive*/
+/*Responsive (mobile)*/
 @media (max-width: 480px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
   .hero-text {
-    text-align: left;
     padding: 1rem 0;
+    order: 1;
+    
   }
   .hero-text h1 {
     font-size: 1.8rem;
+    margin-top: 3.5rem;
   }
   .hero-text p {
     font-size: 0.9rem;
     padding: 0;
   }
+  .hero-image {
+    margin: 30px auto;
+    order: 2;
+  }
+  .hero-image img {
+    width: 120%;
+  }
 }
+
 
 @media (max-width: 480px) {
   .navbar li {
@@ -268,3 +283,12 @@ footer {
   }
 }
 
+@media (max-width: 480px) {
+  .video-gallery {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .video-card {
+    margin-bottom: 1rem;
+  }
+}
