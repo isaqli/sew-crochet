@@ -177,7 +177,7 @@ body {
 }
 
 .video-creator a:hover {
-  color: var(--darkpink);
+  color: var(--darkbrown);
 }
 
 .video-description {
@@ -253,7 +253,6 @@ footer {
   .hero-text {
     padding: 1rem 0;
     order: 1;
-    
   }
   .hero-text h1 {
     font-size: 1.8rem;
@@ -264,16 +263,13 @@ footer {
     padding: 0;
   }
   .hero-image {
-    margin: 30px auto;
+    margin: 30px auto 50px auto;
     order: 2;
   }
   .hero-image img {
-    width: 120%;
+    width: 200px;
   }
-}
 
-
-@media (max-width: 480px) {
   .navbar li {
      margin: 0.25rem;
   }
@@ -281,9 +277,7 @@ footer {
     padding: 0.4rem 0.6rem;
     font-size: 0.8rem;
   }
-}
 
-@media (max-width: 480px) {
   .video-gallery {
     grid-template-columns: 1fr;
     gap: 1rem;
